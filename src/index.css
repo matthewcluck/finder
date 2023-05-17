@@ -8,8 +8,22 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-nav {
+.actual {
   display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+  background-color: bisque;
+  border-style: solid;
+  border-width: 2px;
+  padding: 0;
+  margin: 0;
+}
+
+.filler {
+  display: flex;
+  width: 100%;
   justify-content: space-around;
   text-align: center;
   background-color: bisque;
@@ -21,6 +35,7 @@ nav {
 
 #title {
 font-weight: 900;
+font-style: italic;
 padding: 5px;
 }
 
@@ -44,9 +59,12 @@ padding: 5px;
   display: flex;
   flex-direction: column;
   border: solid;
-  width: 98%;
+  width: 100%;
   padding: .5vh;
-  margin: .5vh;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: .5vh;
+  margin-bottom: 0;
   background-color: white;
 }
 
@@ -63,11 +81,14 @@ padding: 5px;
   margin: 0;
   margin-left: 5px;
   padding: 0;
+  font-weight: 400;
 }
 
 .card-map {
   width: 98%;
   margin: 1vh;
+  height: 55vh;
   border-style: solid;
   align-self: center;
+  pointer-events: none;
 }
