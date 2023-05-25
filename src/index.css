@@ -1,6 +1,7 @@
 body, html {
   margin: 0;
   background-color: rgb(167, 154, 154);
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -37,17 +38,24 @@ body, html {
 font-weight: 900;
 font-style: italic;
 padding: 5px;
+cursor: default;
 }
 
 #add {
   border-style: solid;
   border-width: 2px;
+  text-align: center;
   padding: 5px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: .5vh;
+  margin-bottom: 0;
   cursor: pointer;
 }
 
 #un {
   padding: 5px;
+  cursor:default;
 }
 
 #container {
@@ -63,7 +71,7 @@ padding: 5px;
   padding: .5vh;
   margin-left: 0;
   margin-right: 0;
-  margin-top: .5vh;
+  margin-top: .4vh;
   margin-bottom: 0;
   background-color: white;
 }
@@ -72,7 +80,8 @@ padding: 5px;
   display: flex
 }
 
-.card-title {
+.loc-in {
+  border: 0;
   margin: 0;
   padding: 0;
 }
@@ -91,4 +100,12 @@ padding: 5px;
   border-style: solid;
   align-self: center;
   pointer-events: none;
+}
+
+.verdict {
+  margin: 0;
+}
+
+.card-description {
+  margin: 0;
 }
