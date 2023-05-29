@@ -51,6 +51,7 @@ cursor: default;
   margin-top: .5vh;
   margin-bottom: 0;
   cursor: pointer;
+  background-color: bisque;
 }
 
 #un {
@@ -108,4 +109,49 @@ cursor: default;
 
 .card-description {
   margin: 0;
+}
+
+#popup {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: white;
+  padding: 10px 10px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#popup-close {
+  border: 0;
+  float: right;
+  width: 15px;
+  cursor: pointer;
+  text-align: center;
+  font-size: larger;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+#popup-add {
+  padding: 0;
+  margin: 0;
+}
+
+#popup-overlay  {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background: rgba(49,49,49,0.8);
 }

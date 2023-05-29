@@ -1,7 +1,11 @@
 import React from 'react';
-import logs from './logs';
+import Popup from './Popup'
 
 export default function Top(props) {
+
+    function sub() {
+        console.log("working");
+      }
 
     return(
     <>
