@@ -113,25 +113,29 @@ cursor: default;
 
 #popup {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
   background: white;
-  padding: 10px 10px;
+  padding: 0px .75%;
   border-radius: 3px;
-  max-width: 600px;
-  min-width: 300px;
+  width: 90vw;
+  height: 70vh;
   border-style: solid;
   border-width: 2px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
 }
 
 #popup-close {
   border: 0;
   float: right;
-  width: 15px;
+  width: 3vw;
   cursor: pointer;
   text-align: center;
   font-size: larger;
@@ -141,8 +145,10 @@ cursor: default;
 }
 
 #popup-add {
-  padding: 0;
-  margin: 0;
+  padding: 1px 2px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 #popup-overlay  {
@@ -154,4 +160,37 @@ cursor: default;
   bottom: 0;
   position: fixed;
   background: rgba(49,49,49,0.8);
+}
+
+#popup-submit {
+  cursor: pointer;
+  margin-top: 1vh;
+  width: 15vw;
+}
+
+#form-location {
+  margin-bottom: .5vh;
+  width: 15vw;
+}
+
+#form-rating {
+  margin-top: 1vh;
+  margin-bottom: .5vh;
+  width: 15vw;
+}
+
+#form-map {
+  margin-top: 1vh;
+  margin-bottom: .5vh;
+  width: 15vw;
+}
+
+#form-description {
+  margin-top: 1vh;
+  margin-bottom: .5vh;
+  width: 15vw;
+}
+
+#form-description-input {
+  height: 15vh;
 }
