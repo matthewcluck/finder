@@ -10,12 +10,12 @@ export default function Top(props) {
     return(
     <>
         <nav className={props.name}>
-            <h2 id='title'>
+            <h3 id='title'>
                 finder
-            </h2>
-            <h2 id='un'>
+            </h3>
+            <h3 id='un'>
                 {props.un}
-            </h2>
+            </h3>
         </nav>
     </>
     )

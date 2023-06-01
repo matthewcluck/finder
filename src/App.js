@@ -5,6 +5,7 @@ import Card from "./Card.js";
 import logs from "./logs.js";
 import Popup from "./Popup.js";
 
+
 function App() {
   const name = "jrobinson";
 
@@ -23,14 +24,14 @@ function App() {
     let num = logsData.length;
     const template = {
       id: num,
-      title: "Location",
-      rating: 5,
+      title: document.getElementById("form-location-input").value,
+      rating: document.getElementById("form-rating-input").value,
       map: "https://www.openstreetmap.org/export/embed.html?bbox=6.591024398803712%2C43.251890990327354%2C6.679430007934571%2C43.286514253894225&amp;layer=mapnik",
-      description: "Enter description",
+      description: document.getElementById("form-description-input").value,
     };
     setLogsData((oldData) => [template, ...oldData]);
     setRenderPopup(!renderPopup);
-    console.log(e.target[0])
+    e.preventDefault();
   }
 
   function openPopup() {
@@ -75,6 +76,7 @@ function App() {
       </h4>
       {renderPopup && <Popup submission={submitEntry} close={closeModal} overlayClose={closeModal} />}
       <>{cards}</>
+
     </>
   );
 }
